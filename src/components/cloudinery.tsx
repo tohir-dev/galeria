@@ -1,6 +1,6 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
+import { CldImage, CldUploadButton } from "next-cloudinary";
 
 export function CldImg({ publicId, ...props }: { publicId: string }) {
   return (
@@ -13,3 +13,5 @@ export function CldImg({ publicId, ...props }: { publicId: string }) {
     />
   );
 }
+
+export function CldUploadBtn(){return   <CldUploadButton uploadPreset="dev_preset" />}

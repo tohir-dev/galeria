@@ -90,3 +90,34 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+masonry-grid {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  /* Default gap, you can override this by setting --gap on the masonry-grid element */
+  --default-gap: 10px;
+}
+
+/* Required: base styles for masonry-grid blocks */
+masonry-grid > * {
+  position: absolute;
+  display: block;
+
+  /* This is the line that causes every block to animate on layout change */
+  transition: top 0.3s, left 0.3s;
+
+  /* Main calcs that set the x position of blocks */
+  --col-width: calc(
+    100% / var(--cols) - var(--gap, var(--default-gap)) * (var(--cols) - 1) /
+      var(--cols)
+  );
+  width: var(--col-width);
+  left: calc(
+    var(--col-width) * var(--col-i) + var(--gap, var(--default-gap)) *
+      var(--col-i)
+  );
+}
+
