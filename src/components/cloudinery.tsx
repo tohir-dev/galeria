@@ -1,17 +1,21 @@
 "use client";
 
 import { CldImage, CldUploadButton } from "next-cloudinary";
+import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
-export function CldImg({ publicId, ...props }: { publicId: string }) {
-  return (
-    <CldImage
-      width="300"
-      height="500"
-      src={publicId}
-      sizes="100vw"
-      alt="galeria images"
-    />
-  );
+export function CldImg(props: any) {
+  return <div className=""><CldImage {...props} /></div> ;
 }
 
-export function CldUploadBtn(){return   <CldUploadButton uploadPreset="dev_preset" />}
+export function CldUploadBtn() {
+  const router = useRouter();
+  return (
+    <Button asChild>
+      <CldUploadButton
+        onSuccess={() => router.refresh()}
+        uploadPreset="dev_preset"
+      />
+    </Button>
+  );
+}
