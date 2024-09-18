@@ -9,16 +9,14 @@ import {
 
 type SearchResult = { public_id: string };
 export default async function Home() {
-  const result = (await cloudinary.v2.search
-    .expression("resource_type:image")
-    .sort_by("created_at","desc")
-    .max_results(30)
-    .execute()) as { resources: SearchResult[] };
-
+ 
   return (
   <div>
        
-        {["paintings", "sculptures", "photography", "digital"].map((category) => (
+        {["painting", "photography", "digital"].map(async (category) => {const result = (await cloudinary.v2.search
+      .expression(category).sort_by("public_id","desc")
+      .execute()) as { resources: SearchResult[] };
+return(
           <TabsContent key={category} value={category}>
       <div className="columns-2xs w-full ">
         {result.resources.map((result) => (
@@ -34,7 +32,7 @@ export default async function Home() {
           />
           </div>
         ))}
-      </div></TabsContent>))}</div>
+      </div></TabsContent>)})}</div>
   
   );
 }

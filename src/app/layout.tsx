@@ -11,7 +11,7 @@ const luxora = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "galeria",
+  title: "galeria - african art for africans",
   description: "curated african art from twitter",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={` ${luxora.className} antialiased`}>
         <main className=" min-h-screen md:p-2 ">
-          <Tabs defaultValue="paintings" className="w-full">
+          <Tabs defaultValue="painting" className="w-full">
         <Header />
         {children}</Tabs></main>
       </body>

@@ -7,13 +7,13 @@ import {
 export default function Header() {
   return (
     <div className="container mx-auto">
-      <div className="flex h-16 items-center px-2 gap-2">
+      <div className="flex h-16 items-center px-2 gap-1">
        <h1 className="text-3xl">galeria</h1>
         <div className="ml-auto flex items-center space-x-4">
-          <TabsList className="grid mx-auto w-max grid-cols-3">
-            <TabsTrigger value="paintings">Paintings</TabsTrigger>
+          <TabsList className="flex mx-auto gap-2">
+            <TabsTrigger value="painting">Paintings</TabsTrigger>
             <TabsTrigger value="photography">Photography</TabsTrigger>
-            <TabsTrigger value="digital">Digital Art</TabsTrigger>
+            <TabsTrigger value="digital">Digital</TabsTrigger>
           </TabsList>
         </div>
       </div>
