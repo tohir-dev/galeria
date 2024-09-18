@@ -1,5 +1,15 @@
 import { CldImg } from "@/components/cloudinery";
 import cloudinary from "cloudinary";
+
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs"
+
+
+
 type SearchResult = { public_id: string };
 export default async function Home() {
   const result = (await cloudinary.v2.search
@@ -9,7 +19,10 @@ export default async function Home() {
     .execute()) as { resources: SearchResult[] };
 
   return (
-    <main className=" min-h-screen md:p-2 ">
+  <div>
+       
+        {["paintings", "sculptures", "photography", "digital"].map((category) => (
+          <TabsContent key={category} value={category}>
       <div className="columns-2xs w-full ">
         {result.resources.map((result) => (
          <div
@@ -24,7 +37,7 @@ export default async function Home() {
           />
           </div>
         ))}
-      </div>
-    </main>
+      </div></TabsContent>))}</div>
+  
   );
 }
