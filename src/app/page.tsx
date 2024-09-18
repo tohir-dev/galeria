@@ -9,12 +9,12 @@ export default async function Home() {
     .execute()) as { resources: SearchResult[] };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2 gap-10">
+    <main className=" min-h-screen md:p-2 ">
       <div className="columns-2xs w-full ">
         {result.resources.map((result) => (
          <div
          key={result.public_id}
-         className="mb-4"
+         className="md:mb-4 mb-2"
        >
           <CldImg         
             width="500"

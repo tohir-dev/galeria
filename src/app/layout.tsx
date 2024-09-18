@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={` ${luxora.className} antialiased`}>
+        
         <Header />
         {children}
       </body>
