@@ -92,7 +92,7 @@ export default function MasonryGrid() {
 
   // Initially the images are hidden. Here we wait for them to load,
   // then call layout
-  document.addEventListener("DOMContentLoaded", async (event) => {
+  document.addEventListener("DOMContentLoaded", async () => {
     console.log("loaded DOM");
     const imgs = Array.from(document.querySelectorAll("img"));
     const masonry = document.querySelector("masonry-grid");
