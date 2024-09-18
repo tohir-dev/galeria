@@ -2,10 +2,7 @@ import { CldImg } from "@/components/cloudinery";
 import cloudinary from "cloudinary";
 
 import {
-  Tabs,
   TabsContent,
-  TabsList,
-  TabsTrigger,
 } from "@/components/ui/tabs"
 
 

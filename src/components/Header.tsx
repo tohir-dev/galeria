@@ -1,7 +1,5 @@
-import { Button } from "./ui/button";
-import { CldUploadBtn } from "./cloudinery";
+
 import {
-  TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
