@@ -1,4 +1,4 @@
-// @ts ignore 
+// @ts-ignore 
 
 export default function MasonryGrid() {
 
