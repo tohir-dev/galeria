@@ -2,8 +2,6 @@ import { CldImg } from "@/components/cloudinery";
 import cloudinary from "cloudinary";
 
 import { TabsContent } from "@/components/ui/tabs";
-import { createClient } from "@supabase/supabase-js";
-import Gallery from "@/components/Gallery";
 
 // export async function getInitialProps() {
 //   const supabaseAdmin = createClient(
