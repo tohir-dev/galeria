@@ -18,7 +18,7 @@ import Gallery from "@/components/Gallery";
 
 export type SearchResult = { public_id: string };
 export default async function Home() {
-  return <Gallery/>
+  // return <Gallery/>
   return (
     <div>
       {["painting", "photography", "digital"].map(async (category) => {
