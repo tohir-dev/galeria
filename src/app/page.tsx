@@ -33,7 +33,7 @@ export default async function Home() {
                     width="500"
                     height="500"
                     src={result.public_id}
-                    alt="galeria images"
+                    alt="art-twitter images"
                   />
                 </div>
               ))}

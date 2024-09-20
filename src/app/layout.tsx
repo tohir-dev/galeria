@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
-import {Tabs
-} from "@/components/ui/tabs"
+import { Tabs } from "@/components/ui/tabs";
 
 const luxora = localFont({
   src: "./fonts/LuxoraGrotesk.woff",
@@ -11,7 +10,7 @@ const luxora = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "galeria - african art for africans",
+  title: "art-twitter - african art for africans",
   description: "curated african art from twitter",
 };
 
@@ -25,8 +24,10 @@ export default function RootLayout({
       <body className={` ${luxora.className} antialiased`}>
         <main className=" min-h-screen md:p-2 ">
           <Tabs defaultValue="painting" className="w-full">
-        <Header />
-        {children}</Tabs></main>
+            <Header />
+            {children}
+          </Tabs>
+        </main>
       </body>
     </html>
   );
