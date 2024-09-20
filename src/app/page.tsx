@@ -3,20 +3,22 @@ import cloudinary from "cloudinary";
 
 import { TabsContent } from "@/components/ui/tabs";
 import { createClient } from "@supabase/supabase-js";
+import Gallery from "@/components/Gallery";
 
-export async function getStaticProps() {
-  const supabaseAdmin = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-    process.env.SUPPABASE_SERVICE_ROLE_KEY || ""
-  );
+// export async function getInitialProps() {
+//   const supabaseAdmin = createClient(
+//     process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+//     process.env.SUPPABASE_SERVICE_ROLE_KEY || ""
+//   );
 
-  const { data } = await supabaseAdmin.from("images").select("*").order("id");
+//   const { data } = await supabaseAdmin.from("images").select("*").order("id");
 
-  return { props: { images: data } };
-}
+//   return { props: { images: data } };
+// }
 
-type SearchResult = { public_id: string };
+export type SearchResult = { public_id: string };
 export default async function Home() {
+  return <Gallery/>
   return (
     <div>
       {["painting", "photography", "digital"].map(async (category) => {
