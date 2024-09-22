@@ -1,5 +1,3 @@
-"use client"
-import { useState } from "react";
 import { TabsList, TabsTrigger } from "./ui/tabs";
 
 export default function Header() {
