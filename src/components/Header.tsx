@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div className=" mx-auto">
       <div className="flex h-16 items-center justify-center px-2 gap-4">
-          <div className="flex space-x-4">
+          <div className="flex space-x-4" max-w-screen overflow-x-scroll> 
             {categories.map((category) => (
               <Button
                 key={category}
