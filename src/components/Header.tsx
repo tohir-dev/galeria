@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 
 export default function Header() {
-  const categories = ['popular', 'painting', 'photograph', 'digital']
+  const categories = ['popular', 'painting', 'photograph', 'digital',"drawing","3d","face","anime","animal"]
 
   const [selectedCategory, setSelectedCategory] = useState('popular')
 
