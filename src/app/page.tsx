@@ -4,6 +4,7 @@ import cloudinary from "cloudinary";
 export type SearchResult = { public_id: string };
 export default async function Home() {
   const result = (await cloudinary.v2.search
+    .expression("tags=popular")
     .sort_by("public_id", "desc")
     .execute()) as { resources: SearchResult[] };
   // return <Gallery/>
