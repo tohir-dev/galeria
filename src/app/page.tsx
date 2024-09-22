@@ -9,7 +9,7 @@ export default async function Home() {
     .execute()) as { resources: SearchResult[] };
   // return <Gallery/>
   return (
-    <div>
+    <div className="max-w-screen">
       <div className="columns-1 md:columns-3 lg:columns-4  gap-2 md:gap-4 w-full ">
         {result.resources.map((result) => (
           <div key={result.public_id} className="md:mb-4 mb-2">
