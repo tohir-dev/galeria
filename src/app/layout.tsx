@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Tabs } from "@/components/ui/tabs";
+import Gallery from "@/components/Gallery";
 
 const luxora = localFont({
   src: "./fonts/LuxoraGrotesk.woff",
@@ -23,10 +24,11 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={` ${luxora.className} antialiased`}>
         <main className=" min-h-screen">
-          <Tabs defaultValue="popular"> 
-            <Header />
-            {children}
-          </Tabs>
+          {/* <Tabs defaultValue="popular">  */}
+            {/* <Header /> */}
+            {/* {children} */}
+          {/* </Tabs> */}
+          <Gallery/>
         </main>
       </body>
     </html>

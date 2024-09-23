@@ -1,8 +1,13 @@
 import { CldImg } from "@/components/cloudinery";
 import { TabsContent } from "@/components/ui/tabs";
 import cloudinary from "cloudinary";
+import Image from "next/image";
 
- export const categories = [
+
+export type SearchResult = { public_id: string, secure_url:string };
+export default async function Home() {
+
+  const categories = [
    "popular",
    "painting",
    "photograph",
@@ -24,24 +29,20 @@ import cloudinary from "cloudinary";
    "green",
    "landscape",
  ];
-export type SearchResult = { public_id: string };
-export default async function Home() {
-
-
   return categories.map(async (category) => {
     const result = (await cloudinary.v2.search
-      .expression(`tags=${category}`)
+      .expression(``)
       .execute()) as { resources: SearchResult[] };
     return (
       <TabsContent key={category} value={category}>
         <div className="max-w-screen">
-          <div className="columns-1 md:columns-3 lg:columns-4 xl:column-5  gap-1 md:gap-2 w-full ">
+          <div className="columns-4 md:columns-3 lg:columns-9 xl:column-5  gap-1 md:gap-2 w-full ">
             {result.resources.map((result) => (
               <div key={result.public_id} className="md:mb-2 mb-1">
-                <CldImg
+                <Image
                   width="500"
                   height="500"
-                  src={result.public_id}
+                  src={result.secure_url}
                   alt="art-twitter images"
                 />
               </div>

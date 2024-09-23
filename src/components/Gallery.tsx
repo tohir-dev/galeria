@@ -1,17 +1,28 @@
+import cloudinary from "cloudinary";
 import Image from "next/image";
-export default function Gallery() {
+
+export type SearchResult = { public_id: string; secure_url: string };
+export default async function Gallery() {
+  const result = (await cloudinary.v2.search
+    .expression("resource_type:image")
+    .max_results(50)
+    .execute()) as {
+    resources: SearchResult[];
+  };
   return (
-    <div className="columns-2xs w-full ">
-      <div className="">
-      <a href="">
-        <Image
-          alt=""
-          src="https://res.cloudinary.com/dgpnb2lv4/image/upload/v1726846407/freddiejacobart1680174105444724736_lmuxok.jpg"
-          width={500}
-          height={500}
-          objectFit="cover"
-        />
-      </a></div>
+    <div className="max-w-screen">
+      <div className="columns-4 md:columns-3 lg:columns-9 xl:column-5  gap-1 md:gap-2 w-full ">
+        {result.resources.map((result) => (
+          <div key={result.public_id} className="md:mb-2 mb-1">
+            <Image
+              width="500"
+              height="500"
+              src={result.secure_url}
+              alt="art-twitter images"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
