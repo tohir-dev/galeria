@@ -31,16 +31,18 @@ export default async function Gallery() {
       </div>
       <div className="absolute w-screen h-screen bg-black/70 backdrop-blur-lg top-0 flex flex-col">
         <div className="w-full h-full flex items-center justify-center">
-        <div className="relative  max-h-[80vh] md:max-w-[80vw] w-full h-full mx-auto" >  
-          <Image
-            src={result.resources[20].secure_url}
-            alt="art-twitter images"
-            fill={true}
-objectFit="contain"          />
-        </div></div>
+          <div className="relative  max-h-[80vh] md:max-w-[80vw] w-full h-full mx-auto">
+            <Image
+              src={result.resources[26].secure_url}
+              alt="art-twitter images"
+              fill={true}
+              objectFit="contain"
+            />
+          </div>
+        </div>
         <div className="flex gap-1 w-screen overflow-x-scroll">
           {result.resources.map((result) => (
-            <div key={result.public_id} className="relative h-28 min-w-20">   
+            <div key={result.public_id} className="relative h-28 min-w-20">
               <Image
                 src={result.secure_url}
                 alt="art-twitter images"
