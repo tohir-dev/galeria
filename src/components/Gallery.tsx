@@ -1,5 +1,4 @@
 import cloudinary from "cloudinary";
-import Image from "next/image";
 import { OptimizedImage } from "./OptimizedImage";
 
 export type SearchResult = { public_id: string; secure_url: string };

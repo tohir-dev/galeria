@@ -3,7 +3,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
 
-export const OptimizedImage = ({ src, alt }: any) => {
+type ImageProps ={src:string, alt:string}
+
+export const OptimizedImage = ({ src, alt }: ImageProps) => {
   const [isLoading, setIsLoading] = useState(true);
   return (
     <Image
