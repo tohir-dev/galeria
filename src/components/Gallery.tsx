@@ -29,11 +29,11 @@ export default async function Gallery() {
             ))}
         </div>
       </div>
-      <div className="absolute w-screen h-screen backdrop-blur-lg top-0 flex flex-col">
+      <div className="absolute w-screen h-screen bg-black/70 backdrop-blur-lg top-0 flex flex-col">
         <div className="w-full h-full flex items-center justify-center">
-        <div className="relative max-h-[80vh] max-w-[80vw] w-full h-full mx-auto" >  
+        <div className="relative  max-h-[80vh] md:max-w-[80vw] w-full h-full mx-auto" >  
           <Image
-            src={result.resources[2].secure_url}
+            src={result.resources[20].secure_url}
             alt="art-twitter images"
             fill={true}
 objectFit="contain"          />
