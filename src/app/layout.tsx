@@ -26,9 +26,9 @@ export default function RootLayout({
         <main className=" min-h-screen">
           {/* <Tabs defaultValue="popular">  */}
             {/* <Header /> */}
-            {/* {children} */}
+            {children}
           {/* </Tabs> */}
-          <Gallery/>
+          
         </main>
       </body>
     </html>
