@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
-import { Tabs } from "@/components/ui/tabs";
-import Gallery from "@/components/Gallery";
 
 const luxora = localFont({
   src: "./fonts/LuxoraGrotesk.woff",
