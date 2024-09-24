@@ -14,9 +14,9 @@ export const OptimizedImage = ({ src, alt }: ImageProps) => {
       src={src}
       alt={alt}
       className={cn(
-        "duration-1000",
+        "duration-150 hover:scale-125 cursor-pointer",
         isLoading
-          ? "grayscale blur-2xl scale-110"
+          ? "grayscale blur-2xl scale-100"
           : "grayscale-0 blur-0 scale-100"
       )}
       onLoadingComplete={() => setIsLoading(false)}
