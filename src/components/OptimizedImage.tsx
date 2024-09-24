@@ -19,7 +19,7 @@ export const OptimizedImage = ({ src, alt }: ImageProps) => {
           ? "grayscale blur-2xl scale-100"
           : "grayscale-0 blur-0 scale-100"
       )}
-      onLoadingComplete={() => setIsLoading(false)}
+      onLoad={() => setIsLoading(false)}
     />
   );
 };
