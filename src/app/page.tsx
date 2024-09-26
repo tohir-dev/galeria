@@ -79,7 +79,7 @@ export default function Home() {
         >
           <div
             onClick={() => setView((view) => (view === 2 ? 0 : 2))}
-            className={` aspect-[4/5] mx-auto relative ${
+            className={` aspect-[5/5] mx-auto relative ${
               view ? "" : ""
             } transition-all duration-500 md:h-full w-full md:w-max`}
           >
