@@ -104,7 +104,9 @@ export default function Home() {
 
     // Calculate the sum of fractions
     console.log(index);
-    if (index > array.length) {
+    if (index > array.length * 2) {
+      index = index - array.length * 2;
+    } else if (index > array.length) {
       index = index - array.length;
     }
 
