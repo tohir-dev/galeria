@@ -274,6 +274,22 @@ export default function Home() {
             />
           </div>
         ))}
+        {galleryData3.map((data) => (
+          <div
+            key={data.index}
+            onClick={() => setView(data.index)}
+            style={{ aspectRatio: data.ARwidth / data.ARheight }}
+            className="h-full relative "
+          >
+            <Image
+              fill={true}
+              objectFit="contain"
+              src={data.medium}
+              alt="galeria images"
+              className=""
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
