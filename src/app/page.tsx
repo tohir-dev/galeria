@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <div className="w-screen h-screen relative overflow-hidden">
       <div className="relative  w-screen h-screen">
-        <div className="relative w-[20vw]">
+        <div className="relative w-[25vw]">
           {galleryData1.map((data) => (
             <div
               key={data.index}
@@ -113,13 +113,13 @@ export default function Home() {
                       opacity: 1,
                     }
                   : {
-                      top: `calc(20vw*${sumAspectRatios(
+                      top: `calc(25vw*${sumAspectRatios(
                         data.index,
                         galleryData1
                       )})`,
                       left: 0,
-                      height: `calc(20vw * ${data.ARheight / data.ARwidth})`,
-                      width: "20vw",
+                      height: `calc(25vw * ${data.ARheight / data.ARwidth})`,
+                      width: "25vw",
                     }
               }
               className={`${
@@ -131,8 +131,8 @@ export default function Home() {
           ))}
         </div>
         <div
-          style={{ left: view > 3 ? "0" : "20vw" }}
-          className="absolute w-[20vw] transition-all duration-200"
+          style={{ left: view > 3 ? "0" : "25vw" }}
+          className="absolute w-[25vw] transition-all duration-200"
         >
           {galleryData2.map((data) => (
             <div
@@ -148,13 +148,13 @@ export default function Home() {
                       opacity: 1,
                     }
                   : {
-                      top: `calc(20vw * ${sumAspectRatios(
+                      top: `calc(25vw * ${sumAspectRatios(
                         data.index,
                         galleryData2
                       )})`,
                       left: 0,
-                      height: `calc(20vw * ${data.ARheight / data.ARwidth})`,
-                      width: "20vw",
+                      height: `calc(25vw * ${data.ARheight / data.ARwidth})`,
+                      width: "25vw",
                     }
               }
               className={`${
@@ -173,10 +173,10 @@ export default function Home() {
                 bottom: 0,
               }
             : {
-                bottom: "-4rem",
+                bottom: "-5rem",
               }
         }
-        className="transition-all duration-200 h-16 flex absolute z-20"
+        className="transition-all duration-200 h-20 flex absolute z-20"
       >
         {galleryData1.map((data) => (
           <div
