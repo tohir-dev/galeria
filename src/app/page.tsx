@@ -176,7 +176,7 @@ export default function Home() {
                 bottom: "-5rem",
               }
         }
-        className="transition-all duration-200 h-20 flex absolute z-20"
+        className="transition-all duration-200 h-20 flex w-screen overflow-x-scroll absolute z-20"
       >
         {galleryData1.map((data) => (
           <div
