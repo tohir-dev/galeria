@@ -97,6 +97,29 @@ export default function Home() {
       ARwidth: 4,
     },
   ];
+  const galleryData4 = [
+    {
+      index: 4,
+      medium: "https://i.ibb.co/WD91jYc/horrorsthetics-1836606838793531531.jpg",
+      sharp: "https://i.ibb.co/k3nFvWh/horrorsthetics-1836606838793531531.jpg",
+      ARheight: 76,
+      ARwidth: 67,
+    },
+    {
+      index: 5,
+      medium: "https://i.ibb.co/d676QYT/imit0r-1833967003041734726.jpg",
+      sharp: "https://i.ibb.co/7VbVGmf/imit0r-1833967003041734726.jpg",
+      ARheight: 181,
+      ARwidth: 128,
+    },
+    {
+      index: 6,
+      medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
+      sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
+      ARheight: 56,
+      ARwidth: 71,
+    },
+  ];
 
   function sumAspectRatios(index: number, array: imgData[]) {
     // Ensure index is within the array bounds
