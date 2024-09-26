@@ -71,6 +71,33 @@ export default function Home() {
     },
   ];
 
+  const galleryData3 = [
+    {
+      index: 7,
+      medium:
+        "https://i.ibb.co/NSbfjRs/mendezmendezart-1837138020157337605.jpg",
+      sharp: "https://i.ibb.co/xHdwjZD/mendezmendezart-1837138020157337605.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },
+    {
+      index: 8,
+      medium: "https://i.ibb.co/hydXxZF/incalstory-1774385396723466746.jpg",
+      sharp: "https://i.ibb.co/7XpgxRt/incalstory-1774385396723466746.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },
+    {
+      index: 9,
+      medium:
+        "https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg",
+      sharp:
+        "https://i.ibb.co/k5g99rp/Luca-Ponsato-Art-1838233197378785500.jpg",
+      ARheight: 1,
+      ARwidth: 1,
+    },
+  ];
+
   function sumAspectRatios(index: number, array: imgData[]) {
     // Ensure index is within the array bounds
     // index = Math.min(index, galleryData1.length - 1);
