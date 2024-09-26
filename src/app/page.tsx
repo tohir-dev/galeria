@@ -5,7 +5,6 @@ import { useState } from "react";
 export type SearchResult = { public_id: string };
 export default function Home() {
   const [view, setView] = useState(0);
-  console.log(view);
 
   // constresult = (await cloudinary.v2.search
   //   .expression()
@@ -38,9 +37,9 @@ export default function Home() {
         >
           <div
             onClick={() => setView((view) => (view === 1 ? 0 : 1))}
-            className={` aspect-[4/5] mx-auto ${
-              view ? "h-full" : "w-full"
-            } transition-all duration-500`}
+            className={` aspect-[4/5] mx-auto relative ${
+              view ? "" : ""
+            } transition-all duration-500 md:h-full w-full md:w-max`}
           >
             <Image
               fill={true}
@@ -48,6 +47,11 @@ export default function Home() {
               src="https://i.ibb.co/NSbfjRs/mendezmendezart-1837138020157337605.jpg"
               alt="galeria images"
               className=""
+              loader={() =>
+                view === 1
+                  ? "https://i.ibb.co/xHdwjZD/mendezmendezart-1837138020157337605.jpg"
+                  : "https://i.ibb.co/NSbfjRs/mendezmendezart-1837138020157337605.jpg"
+              }
             />
           </div>
         </div>
@@ -75,9 +79,9 @@ export default function Home() {
         >
           <div
             onClick={() => setView((view) => (view === 2 ? 0 : 2))}
-            className={` aspect-[5/5] mx-auto ${
-              view ? "h-full" : "w-full"
-            } transition-all duration-500`}
+            className={` aspect-[4/5] mx-auto relative ${
+              view ? "" : ""
+            } transition-all duration-500 md:h-full w-full md:w-max`}
           >
             <Image
               fill={true}
@@ -85,6 +89,11 @@ export default function Home() {
               src="https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg"
               alt="galeria images"
               className=""
+              loader={() =>
+                view === 2
+                  ? "https://i.ibb.co/k5g99rp/Luca-Ponsato-Art-1838233197378785500.jpg"
+                  : "https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg"
+              }
             />
           </div>
         </div>
