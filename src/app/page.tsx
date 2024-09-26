@@ -1,4 +1,5 @@
 "use client";
+import GaleriaImg from "@/components/GaleriaImg";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -10,6 +11,14 @@ export default function Home() {
   //   .expression()
   //   .max_results(50)
   //   .execute()) as { resources: SearchResult[] };
+
+  const imgLinks = [
+    {
+      medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
+      sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
+    },
+  ];
+
   return (
     <div className="w-screen h-screen relative overflow-hidden">
       <div className="relative">
@@ -97,8 +106,8 @@ export default function Home() {
             />
           </div>
         </div>
+        <GaleriaImg view={view} setView={setView} imgLinks={imgLinks[0]} />
       </div>
-
       <div
         style={
           view !== 0
