@@ -212,7 +212,7 @@ export default function Home() {
                   : {
                       top: `calc(25vw * ${sumAspectRatios(
                         data.index,
-                        galleryData2
+                        galleryData3
                       )})`,
                       right: 0,
                       height: `calc(25vw * ${data.ARheight / data.ARwidth})`,
