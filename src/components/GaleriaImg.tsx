@@ -23,7 +23,7 @@ export default function GaleriaImg({
       }
       className={`  mx-auto relative ${
         view ? "" : ""
-      } transition-all duration-500 md:h-full w-full md:w-max`}
+      } transition-all duration-200 md:h-full w-full md:w-max`}
     >
       <Image
         fill={true}
