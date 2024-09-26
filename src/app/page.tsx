@@ -31,46 +31,43 @@ export default function Home() {
     },
     {
       index: 2,
+      medium: "https://i.ibb.co/hydXxZF/incalstory-1774385396723466746.jpg",
+      sharp: "https://i.ibb.co/7XpgxRt/incalstory-1774385396723466746.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },
+    {
+      index: 3,
       medium:
         "https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg",
       sharp:
         "https://i.ibb.co/k5g99rp/Luca-Ponsato-Art-1838233197378785500.jpg",
       ARheight: 1,
       ARwidth: 1,
-    },
-    {
-      index: 3,
-      medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
-      sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
-      ARheight: 56,
-      ARwidth: 71,
     },
   ];
 
   const galleryData2 = [
     {
       index: 4,
+      medium: "https://i.ibb.co/WD91jYc/horrorsthetics-1836606838793531531.jpg",
+      sharp: "https://i.ibb.co/k3nFvWh/horrorsthetics-1836606838793531531.jpg",
+      ARheight: 76,
+      ARwidth: 67,
+    },
+    {
+      index: 5,
+      medium: "https://i.ibb.co/d676QYT/imit0r-1833967003041734726.jpg",
+      sharp: "https://i.ibb.co/7VbVGmf/imit0r-1833967003041734726.jpg",
+      ARheight: 181,
+      ARwidth: 128,
+    },
+    {
+      index: 6,
       medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
       sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
       ARheight: 56,
       ARwidth: 71,
-    },
-    {
-      index: 5,
-      medium:
-        "https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg",
-      sharp:
-        "https://i.ibb.co/k5g99rp/Luca-Ponsato-Art-1838233197378785500.jpg",
-      ARheight: 1,
-      ARwidth: 1,
-    },
-    {
-      index: 6,
-      medium:
-        "https://i.ibb.co/NSbfjRs/mendezmendezart-1837138020157337605.jpg",
-      sharp: "https://i.ibb.co/xHdwjZD/mendezmendezart-1837138020157337605.jpg",
-      ARheight: 5,
-      ARwidth: 4,
     },
   ];
 
@@ -182,6 +179,22 @@ export default function Home() {
         className="transition-all duration-200 h-16 flex absolute z-20"
       >
         {galleryData1.map((data) => (
+          <div
+            key={data.index}
+            onClick={() => setView(data.index)}
+            style={{ aspectRatio: data.ARwidth / data.ARheight }}
+            className="h-full relative "
+          >
+            <Image
+              fill={true}
+              objectFit="contain"
+              src={data.medium}
+              alt="galeria images"
+              className=""
+            />
+          </div>
+        ))}
+        {galleryData2.map((data) => (
           <div
             key={data.index}
             onClick={() => setView(data.index)}
