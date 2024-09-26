@@ -102,6 +102,7 @@ export default function Home() {
       >
         {galleryData.map((data) => (
           <div
+            key={data.index}
             onClick={() => setView(data.index)}
             style={{ aspectRatio: data.ARwidth / data.ARheight }}
             className="h-full relative "
