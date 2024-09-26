@@ -21,10 +21,7 @@ export default async function Gallery() {
             .map(({ value }) => value)
             .map((result) => (
               <div key={result.public_id} className="md:mb-2 mb-1">
-                <OptimizedImage
-                  src={result.secure_url}
-                  alt="art-twitter images"
-                />
+                <OptimizedImage src={result.secure_url} alt="galeria images" />
               </div>
             ))}
         </div>
@@ -34,7 +31,7 @@ export default async function Gallery() {
           <div className="relative  max-h-[80vh] md:max-w-[80vw] w-full h-full mx-auto">
             <Image
               src={result.resources[26].secure_url}
-              alt="art-twitter images"
+              alt="galeria images"
               fill={true}
               objectFit="contain"
             />
@@ -45,7 +42,7 @@ export default async function Gallery() {
             <div key={result.public_id} className="relative h-28 min-w-20">
               <Image
                 src={result.secure_url}
-                alt="art-twitter images"
+                alt="galeria images"
                 objectFit="cover"
                 fill={true}
                 className=""
