@@ -92,8 +92,8 @@ export default function Home() {
       medium:
         "https://i.ibb.co/2cV8545/Funky-Cold-Tobias-1838542569766056244.jpg",
       sharp: "https://i.ibb.co/5spY2H2/Funky-Cold-Tobias-1838542569766056244.jpg",
-      ARheight: 1,
-      ARwidth: 1
+      ARheight: 181,
+      ARwidth: 128
     },
   ];
   const galleryData4 = [
@@ -330,6 +330,21 @@ export default function Home() {
           </div>
         ))}
         {galleryData3.map((data) => (
+          <div
+            key={data.index}
+            onClick={() => setView(data.index)}
+            style={{ aspectRatio: data.ARwidth / data.ARheight }}
+            className="h-full relative "
+          >
+            <Image
+              fill={true}
+              objectFit="contain"
+              src={data.medium}
+              alt="galeria images"
+              className=""
+            />
+          </div>
+        ))}{galleryData4.map((data) => (
           <div
             key={data.index}
             onClick={() => setView(data.index)}
