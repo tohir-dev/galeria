@@ -250,6 +250,37 @@ export default function Home() {
               <GaleriaImg view={view} setView={setView} imgData={data} />
             </div>
           ))}
+        </div><div  className="absolute w-[25vw]  right-0">  
+          {galleryData4.map((data) => (
+            <div
+              key={data.index}
+              style={
+                view === data.index
+                  ? {
+                      top: 0,
+                      right: 0,
+                      height: "100vh",
+                      width: "100vw",
+                      zIndex: 10,
+                      opacity: 1,
+                    }
+                  : {
+                      top: `calc(25vw*${sumAspectRatios(
+                        data.index,
+                        galleryData1
+                      )})`,
+                      right: 0,
+                      height: `calc(25vw * ${data.ARheight / data.ARwidth})`,
+                      width: "25vw",
+                    }
+              }
+              className={`${
+                view === 0 ? "opacity-100" : "opacity-0"
+              } flex items-center transition-all duration-200 max-h-screen bg-black absolute`}
+            >
+              <GaleriaImg view={view} setView={setView} imgData={data} />
+            </div>
+          ))}
         </div>
       </div>
       <div
