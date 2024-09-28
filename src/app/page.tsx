@@ -98,21 +98,21 @@ export default function Home() {
   ];
   const galleryData4 = [
     {
-      index: 4,
-      medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
-      sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
+      index: 10,
+      medium: "https://i.ibb.co/C9SQGFD/Jannnnai-1838139239055184008.jpg",
+      sharp: "https://i.ibb.co/X5GtRTM/Jannnnai-1838139239055184008.jpg",
       ARheight: 56,
       ARwidth: 71,
     },
     {
-      index: 5,
+      index: 11,
       medium: "https://i.ibb.co/d676QYT/imit0r-1833967003041734726.jpg",
       sharp: "https://i.ibb.co/7VbVGmf/imit0r-1833967003041734726.jpg",
       ARheight: 181,
       ARwidth: 128,
     },
     {
-      index: 6,
+      index: 12,
       medium: "https://i.ibb.co/WD91jYc/horrorsthetics-1836606838793531531.jpg",
       sharp: "https://i.ibb.co/k3nFvWh/horrorsthetics-1836606838793531531.jpg",
       ARheight: 76,
@@ -126,7 +126,9 @@ export default function Home() {
 
     // Calculate the sum of fractions
     console.log(index);
-    if (index > array.length * 2) {
+    if (index > array.length * 3) {
+      index = index - array.length * 3;
+    } else if (index > array.length * 2) {
       index = index - array.length * 2;
     } else if (index > array.length) {
       index = index - array.length;
@@ -267,7 +269,7 @@ export default function Home() {
                   : {
                       top: `calc(25vw*${sumAspectRatios(
                         data.index,
-                        galleryData1
+                        galleryData4
                       )})`,
                       right: 0,
                       height: `calc(25vw * ${data.ARheight / data.ARwidth})`,
