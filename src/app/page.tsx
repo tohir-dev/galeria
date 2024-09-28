@@ -90,10 +90,10 @@ export default function Home() {
     {
       index: 9,
       medium:
-        "https://i.ibb.co/NSbfjRs/mendezmendezart-1837138020157337605.jpg",
-      sharp: "https://i.ibb.co/xHdwjZD/mendezmendezart-1837138020157337605.jpg",
-      ARheight: 5,
-      ARwidth: 4,
+        "https://i.ibb.co/2cV8545/Funky-Cold-Tobias-1838542569766056244.jpg",
+      sharp: "https://i.ibb.co/5spY2H2/Funky-Cold-Tobias-1838542569766056244.jpg",
+      ARheight: 1,
+      ARwidth: 1
     },
   ];
   const galleryData4 = [
