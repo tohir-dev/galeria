@@ -101,8 +101,8 @@ export default function Home() {
       index: 10,
       medium: "https://i.ibb.co/C9SQGFD/Jannnnai-1838139239055184008.jpg",
       sharp: "https://i.ibb.co/X5GtRTM/Jannnnai-1838139239055184008.jpg",
-      ARheight: 56,
-      ARwidth: 71,
+      ARheight: 5,
+      ARwidth: 4,
     },
     {
       index: 11,
