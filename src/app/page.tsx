@@ -106,8 +106,8 @@ export default function Home() {
     },
     {
       index: 11,
-      medium: "https://i.ibb.co/d676QYT/imit0r-1833967003041734726.jpg",
-      sharp: "https://i.ibb.co/7VbVGmf/imit0r-1833967003041734726.jpg",
+      medium: "https://i.ibb.co/KjP6ZH4/blvvvckfire-1490382135210954754.jpg",
+      sharp: "https://i.ibb.co/rGjkPJ8/blvvvckfire-1490382135210954754.jpg",
       ARheight: 181,
       ARwidth: 128,
     },
