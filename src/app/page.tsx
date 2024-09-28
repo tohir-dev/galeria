@@ -83,7 +83,7 @@ export default function Home() {
     {
       index: 8,
       medium: "https://i.ibb.co/CVSJbp3/esraeslen-1837792324551667889-crxlzp.jpg",
-      sharp: "https://i.ibb.co/7XpgxRt/incalstory-1774385396723466746.jpg",
+      sharp: "https://i.ibb.co/frT8kVz/esraeslen-1837792324551667889-crxlzp.jpg",
       ARheight: 5,
       ARwidth: 4,
     },
