@@ -75,8 +75,7 @@ export default function Home() {
     {
       index: 7,
       medium:
-        "https://i.ibb.co/JmRyybN/Luca-Ponsato-Art-1838233197378785500.jpg",
-      sharp:
+        "https://i.ibb.co/cLTdLCq/blankspac-e-1838030863583613182.jpg",     sharp:
         "https://i.ibb.co/L5pf5JK/blankspac-e-1838030863583613182.jpg",
       ARheight: 1,
       ARwidth: 1,
