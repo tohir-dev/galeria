@@ -405,7 +405,7 @@ export default function Home() {
         style={
           view !== 0
             ? {
-                top: 0,
+                top: "calc(100vh - 5rem)",
               }
             : {
                 top: "-5rem",
