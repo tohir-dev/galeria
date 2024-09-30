@@ -405,7 +405,7 @@ export default function Home() {
         style={
           view !== 0
             ? {
-                bottom: 0,
+                top: 0,
               }
             : {
                 bottom: "-5rem",
