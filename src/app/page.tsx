@@ -408,7 +408,7 @@ export default function Home() {
                 top: 0,
               }
             : {
-                bottom: "-5rem",
+                top: "-5rem",
               }
         }
         className="transition-all duration-200 h-20 flex w-screen overflow-x-scroll absolute z-20"
