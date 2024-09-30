@@ -44,51 +44,140 @@ export default function Home() {
         "https://i.ibb.co/k5g99rp/Luca-Ponsato-Art-1838233197378785500.jpg",
       ARheight: 1,
       ARwidth: 1,
+    }, {
+      index: 4,
+      medium:
+        "https://i.ibb.co/GnSYhQq/Mrdodobird-1832589332156445113.jpg",
+      sharp:
+        "https://i.ibb.co/MZ0wXkm/Mrdodobird-1832589332156445113.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },{
+      index: 5,
+      medium:
+        "https://i.ibb.co/WpGrHbV/Luca-Ponsato-Art-1782787802586849362.jpg",
+      sharp:
+        "https://i.ibb.co/4gKbF61/Luca-Ponsato-Art-1782787802586849362.jpg",
+      ARheight: 1,
+      ARwidth: 1,
+    },{
+      index: 6,
+      medium:
+        "https://i.ibb.co/wpJG5qK/freddiejacobart-1709497297229242612.jpg",
+      sharp:
+        "https://i.ibb.co/ss5x84F/freddiejacobart-1709497297229242612.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },{
+      index: 7,
+      medium:
+        "https://i.ibb.co/KL360QS/nawafers-1838690225985343744.jpg",
+      sharp:
+        "https://i.ibb.co/pR920s5/nawafers-1838690225985343744.jpg",
+      ARheight: 5,
+      ARwidth: 4,
     },
   ];
 
   const galleryData2 = [
     {
-      index: 4,
+      index: 8,
       medium: "https://i.ibb.co/WD91jYc/horrorsthetics-1836606838793531531.jpg",
       sharp: "https://i.ibb.co/k3nFvWh/horrorsthetics-1836606838793531531.jpg",
       ARheight: 76,
       ARwidth: 67,
     },
     {
-      index: 5,
+      index: 9,
       medium: "https://i.ibb.co/d676QYT/imit0r-1833967003041734726.jpg",
       sharp: "https://i.ibb.co/7VbVGmf/imit0r-1833967003041734726.jpg",
       ARheight: 181,
       ARwidth: 128,
     },
     {
-      index: 6,
+      index: 10,
       medium: "https://i.ibb.co/QQGPV4H/Ifihas-R5-1838208305547649039.jpg",
       sharp: "https://i.ibb.co/bmnsVkv/Ifihas-R5-1838208305547649039.jpg",
       ARheight: 56,
       ARwidth: 71,
+    }, {
+      index: 11,
+      medium: "https://i.ibb.co/L0Pwb9f/anime-twits-1838032002009674128.jpg",
+      sharp: "https://i.ibb.co/nw02ZQS/anime-twits-1838032002009674128.jpg",
+      ARheight: 819,
+      ARwidth: 640,
     },
-  ];
-
-  const galleryData3 = [
     {
-      index: 7,
+      index: 12,
+      medium: "https://i.ibb.co/QbSHY4T/theelvnth-1837933672298598751.jpg",
+      sharp: "https://i.ibb.co/kHbDqtw/theelvnth-1837933672298598751.jpg",
+      ARheight: 1,
+      ARwidth: 1,
+    },
+    {
+      index: 13,
       medium:
         "https://i.ibb.co/cLTdLCq/blankspac-e-1838030863583613182.jpg",     sharp:
         "https://i.ibb.co/L5pf5JK/blankspac-e-1838030863583613182.jpg",
       ARheight: 1,
       ARwidth: 1,
+    },{
+      index: 14,
+      medium:
+      "https://i.ibb.co/8rxyY31/afrogodd-1709670022073696445.jpg",
+    sharp: "https://i.ibb.co/k4DLmnN/afrogodd-1709670022073696445.jpg",
+    ARheight: 121,
+    ARwidth: 64
+    },
+  ];
+
+  const galleryData3 = [
+    {
+      index: 15,
+      medium:
+        "https://i.ibb.co/L1qbz61/umiamara-1837587785777139828.jpg",     sharp:
+        "https://i.ibb.co/4pD9ZMp/umiamara-1837587785777139828.jpg",
+      ARheight: 83,
+      ARwidth:64,
     },
     {
-      index: 8,
+      index: 16,
       medium: "https://i.ibb.co/CVSJbp3/esraeslen-1837792324551667889-crxlzp.jpg",
       sharp: "https://i.ibb.co/frT8kVz/esraeslen-1837792324551667889-crxlzp.jpg",
       ARheight: 4,
       ARwidth: 3,
     },
     {
-      index: 9,
+      index: 17,
+      medium:
+        "https://i.ibb.co/86KjyFw/blankspac-e-1838067261921546576.jpg",
+      sharp: "https://i.ibb.co/LnkCT4y/blankspac-e-1838067261921546576.jpg",
+      ARheight: 1,
+      ARwidth: 1
+    },{
+      index: 18,
+      medium:
+        "https://i.ibb.co/71Z5xC9/its-linesart-1840451694737383677.jpg",     sharp:
+        "https://i.ibb.co/BCQxH31/its-linesart-1840451694737383677.jpg",
+      ARheight: 381,
+      ARwidth:320,
+    },
+    {
+      index: 19,
+      medium: "https://i.ibb.co/3c7Ddt8/paulheaston-1835804204881109182.jpg",
+      sharp: "https://i.ibb.co/6Fm3w6p/paulheaston-1835804204881109182.jpg",
+      ARheight: 853,
+      ARwidth: 640,
+    },
+    {
+      index: 20,
+      medium:
+        "https://i.ibb.co/SBxQZzs/sutokun123-1840364646408020133.jpg",
+      sharp: "https://i.ibb.co/7Kzg0qY/sutokun123-1840364646408020133.jpg",
+      ARheight: 623,
+      ARwidth: 640
+    },{
+      index: 21,
       medium:
         "https://i.ibb.co/2cV8545/Funky-Cold-Tobias-1838542569766056244.jpg",
       sharp: "https://i.ibb.co/5spY2H2/Funky-Cold-Tobias-1838542569766056244.jpg",
@@ -98,25 +187,52 @@ export default function Home() {
   ];
   const galleryData4 = [
     {
-      index: 10,
+      index: 22,
       medium: "https://i.ibb.co/C9SQGFD/Jannnnai-1838139239055184008.jpg",
       sharp: "https://i.ibb.co/X5GtRTM/Jannnnai-1838139239055184008.jpg",
       ARheight: 5,
       ARwidth: 4,
     },
     {
-      index: 11,
+      index: 23,
       medium: "https://i.ibb.co/KjP6ZH4/blvvvckfire-1490382135210954754.jpg",
       sharp: "https://i.ibb.co/rGjkPJ8/blvvvckfire-1490382135210954754.jpg",
       ARheight: 181,
       ARwidth: 128,
     },
     {
-      index: 12,
+      index: 24,
       medium: "https://i.ibb.co/WD91jYc/horrorsthetics-1836606838793531531.jpg",
       sharp: "https://i.ibb.co/k3nFvWh/horrorsthetics-1836606838793531531.jpg",
       ARheight: 76,
       ARwidth: 67,
+    }, {
+      index: 25,
+      medium: "https://i.ibb.co/RppM0Jq/ckbdidit-1837520380203807012.jpg",
+      sharp: "https://i.ibb.co/hRRnWTS/ckbdidit-1837520380203807012.jpg",
+      ARheight: 5,
+      ARwidth: 4,
+    },
+    {
+      index: 26,
+      medium: "https://i.ibb.co/bbJswMh/Roger-Haus-1837843348846985225.jpg",
+      sharp: "https://i.ibb.co/wcsSGFH/Roger-Haus-1837843348846985225.jpg",
+      ARheight: 85,
+      ARwidth: 64,
+    },
+    {
+      index: 27,
+      medium:
+        "https://i.ibb.co/ByRFBcZ/Wolfy-The-Witch-1840724625321283804.jpg",
+      sharp: "https://i.ibb.co/Vg85TJS/Wolfy-The-Witch-1840724625321283804.jpg",
+      ARheight: 853,
+      ARwidth: 640
+    }, {
+      index: 28,
+      medium: "https://i.ibb.co/mRNprTz/Ramin-Nasibov-1836888044617466123.jpg",
+      sharp: "https://i.ibb.co/tHLRwKC/Ramin-Nasibov-1836888044617466123.jpg",
+      ARheight: 803,
+      ARwidth: 640,
     },
   ];
 
