@@ -408,7 +408,7 @@ export default function Home() {
                 top: "calc(100vh - 5rem)",
               }
             : {
-                top: "-5rem",
+                top: "100vh",
               }
         }
         className="transition-all duration-200 h-20 flex w-screen overflow-x-scroll absolute z-20"
