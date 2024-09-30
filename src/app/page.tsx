@@ -92,8 +92,8 @@ export default function Home() {
       medium:
         "https://i.ibb.co/2cV8545/Funky-Cold-Tobias-1838542569766056244.jpg",
       sharp: "https://i.ibb.co/5spY2H2/Funky-Cold-Tobias-1838542569766056244.jpg",
-      ARheight: 181,
-      ARwidth: 128
+      ARheight: 1,
+      ARwidth: 1
     },
   ];
   const galleryData4 = [
