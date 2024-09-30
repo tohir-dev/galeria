@@ -265,8 +265,8 @@ export default function Home() {
   }
 
   return (
-    <div className="w-screen h-screen relative overflow-hidden">
-      <div className="relative  w-screen h-screen">
+    <div className="w-screen relative ">
+      <div className="relative  w-screen ">
         <div className="relative w-[25vw]">
           {galleryData1.map((data) => (
             <div
