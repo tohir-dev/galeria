@@ -21,7 +21,7 @@ export default function GaleriaImg({
       onClick={() =>
         setView((view) => (view === imgData.index ? 0 : imgData.index))
       }
-      className={`  mx-auto relative ${
+      className={` mx-auto relative ${
         view ? "" : ""
       } transition-all duration-200 md:h-full w-full md:w-max`}
     >
@@ -30,7 +30,7 @@ export default function GaleriaImg({
         objectFit="contain"
         src={imgData.medium}
         alt="galeria images"
-        className=""
+        className="p-[2px]"
         loader={() => (view === imgData.index ? imgData.sharp : imgData.medium)}
       />
     </div>
