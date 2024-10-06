@@ -19,6 +19,7 @@ export default function Home() {
   //   .expression()
   //   .max_results(50)
   //   .execute()) as { resources: SearchResult[] };
+  
 
   const galleryData1 = [
     {
@@ -258,15 +259,12 @@ export default function Home() {
       sum += array[i - 1].ARheight / array[i - 1].ARwidth;
       console.log(i, array[i - 1].ARheight, array[i - 1].ARwidth);
     }
-
-    console.log(sum);
-
     return sum;
   }
 
   return (
-    <div className="w-screen relative ">
-      <div className="relative  w-screen ">
+    <div className="w-screen relative">
+      <div style={{ overflowY: view === 0 ? "scroll" : "hidden" }} className="relative h-screen w-screen ">
         <div className="relative w-[25vw]">
           {galleryData1.map((data) => (
             <div
@@ -300,7 +298,7 @@ export default function Home() {
           ))}
         </div>
         <div
-          style={{ left: view > 3 ? "0" : "25vw" }}
+          style={{ left: view > 7 && view < 15 ? "0" : "25vw" }}
           className="absolute w-[25vw] transition-all duration-200"
         >
           {galleryData2.map((data) => (
@@ -328,14 +326,14 @@ export default function Home() {
               }
               className={`${
                 view === 0 ? "opacity-100" : "opacity-0"
-              } flex items-center transition-all duration-200 max-h-screen bg-black absolute`}
+              } flex items-center transition-all duration-200 max-h-screen  bg-black absolute`}
             >
               <GaleriaImg view={view} setView={setView} imgData={data} />
             </div>
           ))}
         </div>
         <div
-          style={{ right: view > 6 ? "0" : "25vw" }}
+          style={{ right: view > 14 && view < 22 ? "0" : "25vw" }}
           className="absolute w-[25vw] transition-all duration-200"
         >
           {galleryData3.map((data) => (
@@ -401,7 +399,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         style={
           view !== 0
             ? {
@@ -411,7 +409,7 @@ export default function Home() {
                 top: "100vh",
               }
         }
-        className="transition-all duration-200 h-20 flex w-screen overflow-x-scroll absolute z-20"
+        className="transition-all  duration-200 h-20 flex w-screen overflow-x-scroll absolute z-20"
       >
         {galleryData1.map((data) => (
           <div
@@ -476,7 +474,53 @@ export default function Home() {
             />
           </div>
         ))}
-      </div>
+      </div>  */}
+      {/* <div className="">   <div
+              
+              style={
+                view 
+                  ? {
+                      top: 0,
+                      left: 0,
+                      height: "100vh",
+                      width: "100vw",
+                      zIndex: 10,
+                      opacity: 1,
+                    }
+                  : {
+                      top: `calc(25vw*${sumAspectRatios(
+                        view,
+                        galleryData1
+                      )})`,
+                      left: 0,
+                      height: `calc(25vw * ${galleryData1[view-1].ARheight / galleryData1[view-1].ARwidth})`,
+                      width: "25vw",
+                    }
+              }
+              className={`${
+                view === 0 ? "opacity-100" : "opacity-0"
+              } flex items-center transition-all duration-200 max-h-screen bg-black absolute`}
+            >
+              <GaleriaImg view={view} setView={setView} imgData={galleryData1[view-1]} />
+            </div></div> */}
+            {/* <div className="columns-4 w-full gap-1 p-1">{galleryData1.concat(galleryData2,galleryData3,galleryData4).map((data) => (
+          <div
+            key={data.index}
+            onClick={() => setView(data.index)}
+            // style={{ aspectRatio: data.ARwidth / data.ARheight }}
+            className=" relative h-full w-full mb-1"
+          >
+            <Image
+              // fill={true}
+              width={500}
+              height={600}
+              objectFit="cover"
+              src={data.medium}
+              alt="galeria images"
+              className="rounded-lg"
+            />
+          </div>
+        ))}</div> */}
     </div>
   );
 }
