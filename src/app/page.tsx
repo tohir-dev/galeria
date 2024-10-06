@@ -1,6 +1,5 @@
 "use client";
 import GaleriaImg from "@/components/GaleriaImg";
-import Image from "next/image";
 import { useState } from "react";
 
 export type imgData = {

@@ -21,8 +21,8 @@ export default function GaleriaImg({
       onClick={() =>
         setView((view) => (view === imgData.index ? 0 : imgData.index))
       }
-      className={` mx-auto relative ${
-        view === imgData.index ? "w-screen h-screen md:w-max p-4" : ""
+      className={` mx-auto relative flex flex-col gap-2 ${
+        view === imgData.index ? "w-screen h-screen md:w-max p-2" : ""
       } transition-all duration-200 h-full max-w-[100vw] max-h-[100vh]`}
     >
       <div
@@ -43,6 +43,7 @@ export default function GaleriaImg({
           }
         />
       </div>
+     {view === imgData.index &&  <div className="flex h-20 w-full bg-white"></div>}
     </div>
   );
 }
