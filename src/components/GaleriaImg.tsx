@@ -23,14 +23,14 @@ export default function GaleriaImg({
       }
       className={` mx-auto relative ${
         view ? "" : ""
-      } transition-all duration-200 md:h-full w-full md:w-max`}
+      } transition-all duration-200 h-full max-w-screen`}
     >
       <Image
         fill={true}
-        objectFit="contain"
+        objectFit="cover"
         src={imgData.medium}
         alt="galeria images"
-        className="p-[2px]"
+        className="p-[2px] "
         loader={() => (view === imgData.index ? imgData.sharp : imgData.medium)}
       />
     </div>
