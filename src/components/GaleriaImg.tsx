@@ -22,17 +22,27 @@ export default function GaleriaImg({
         setView((view) => (view === imgData.index ? 0 : imgData.index))
       }
       className={` mx-auto relative ${
-        view ? "" : ""
-      } transition-all duration-200 h-full max-w-screen`}
+        view === imgData.index ? "w-screen h-screen md:w-max p-4" : ""
+      } transition-all duration-200 h-full max-w-[100vw] max-h-[100vh]`}
     >
-      <Image
-        fill={true}
-        objectFit="cover"
-        src={imgData.medium}
-        alt="galeria images"
-        className="p-[2px] "
-        loader={() => (view === imgData.index ? imgData.sharp : imgData.medium)}
-      />
+      <div
+        className={` relative flex justify-center items-center w-full h-full ${
+          view === imgData.index ? " border border-[8px] rounded-[33px]" : ""
+        } `}
+      >
+      {view === imgData.index &&
+        <div className="absolute w-16 h-4 rounded-full z-10 bg-black/100 top-4"></div>}
+        <Image
+          fill={true}
+          objectFit="cover"
+          src={imgData.medium}
+          alt="galeria images"
+          className={`  ${view === imgData.index ? " rounded-[25px] border" : ""} `}
+          loader={() =>
+            view === imgData.index ? imgData.sharp : imgData.medium
+          }
+        />
+      </div>
     </div>
   );
 }
